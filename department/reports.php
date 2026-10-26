@@ -1,0 +1,3 @@
+<?php require_once __DIR__ . '/../includes/functions.php'; $user=require_role(['Department Officer']); $title='Department Reports'; require __DIR__.'/../views/partials/header.php'; ?>
+<div class="row g-3"><div class="col-md-4"><a class="card metric-card text-decoration-none" href="<?= e(url('reports/prediction_report.php')) ?>"><div class="icon"><i class="bi bi-file-bar-graph"></i></div><h3 class="h5">Prediction Analytics</h3><p>Printable report</p></a></div><div class="col-md-4"><a class="card metric-card text-decoration-none" href="<?= e(url('reports/risk_report.php')) ?>"><div class="icon"><i class="bi bi-shield-exclamation"></i></div><h3 class="h5">Risk Report</h3><p>High risk list</p></a></div></div>
+<?php require __DIR__.'/../views/partials/footer.php'; ?>
